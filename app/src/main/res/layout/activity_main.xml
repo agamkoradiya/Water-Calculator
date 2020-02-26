@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watertwo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#18FFFF"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text=" Enter your weight \nin kilograms:"
+        android:textColor="#181717"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="phone"
+        android:textColor="#F30404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:background="#18FFFF"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text=" Enter your exercise \n time in minute:"
+        android:textColor="#181717"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="exercise"
+        android:inputType="phone"
+        android:text="0"
+        android:textColor="#FA0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/submitButton"
+        android:onClick="btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight"
+        app:layout_constraintVertical_bias="0.424"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@color/green"
+        app:sub_btn_ripple_color="@color/green"
+        app:sub_btn_tick_color="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
